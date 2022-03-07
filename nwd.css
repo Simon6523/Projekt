@@ -1,0 +1,31 @@
+.global-body {
+    background-image: url('background1.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.logo {
+    margin-left: 75%;
+    top: 3%;
+    position: absolute;
+}
+ 
+.first-box {
+    position:absolute;
+    margin: 11vh;
+    margin-top: 20vh;
+}
+
+.h1-index {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: 520;
+    height: 7rem;
+    width: 39rem;
+    font-family: Arial, Helvetica, sans-serif
+}
