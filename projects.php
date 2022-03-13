@@ -2,10 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8">
+<title>Nordic Web Design</title>
 <link rel="stylesheet" href="nwd.css">
 </head>
-<body>
-
+<body class="global-body">
+<?php include 'header.php';?>
+ 
 
 
 

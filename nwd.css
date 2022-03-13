@@ -1,0 +1,138 @@
+.global-body {
+    background-image: url('background1.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.logo {  /* Gör så att logo är i en låst position och är placerad så som jag önskar */
+    margin-left: 75%;
+    top: 3%;
+    position: absolute;
+}
+ 
+.first-box { /* Skapar en "låda" runt texten på första sidan så jag lätt kan positionera den som jag vill */
+    position:absolute;
+    margin: 11vh;
+    margin-top: 20vh;
+}
+
+.h1-index { /* Stylar min text så som jag önskat för att den ska stå ut lite mer.  */
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: 520;
+    height: 7rem;
+    width: 39rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    color: white;
+    background-color: transparent;
+    
+  }
+  
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* Style the container */
+  .container-form {
+    border-radius: 2px;
+    padding: 25px;
+    width: 400px;
+    margin-top: 2%;
+    margin-left: 10vh;
+   
+     
+    
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Floating column for inputs: 75% width */
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+    background-color: transparent;
+  }
+
+  .header-box {
+      height: 200px;
+      width: 100%;
+  }
+  
+  /*  Responsiv layout - när skärmen är mindre än 600px bred, får de två kolumnerna att staplas ovanpå varandra istället för bredvid varandra */
+  @media screen and (max-width: 600px) {Responsive
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container-index {
+  display: flex;
+  justify-content: space between;
+  flex-wrap: wrap; /* added - this tells Flex to wrap onto a new line, if there is no space. */
+  margin-top: 20%;
+  margin-left: 25%;
+}
+
+.column {
+  display: inline block;
+  padding: 0.5em;
+  display: block;
+  width: 33.333%;
+  box-sizing: border-box; /* added - this changes the way padding is applied, so it always stays at 33.33%, regardless of padding */
+}
